@@ -1,5 +1,5 @@
 Web Chat Server (Instructions)
-> Course: CSCI 2020U: Software Systems Development and Integration
+
 ###### *This was a university project, copying code not allowed*
 
 ## Authors
