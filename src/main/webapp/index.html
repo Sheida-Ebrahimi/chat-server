@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Chat Server</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+<!--  <link rel="manifest" href="site.webmanifest">-->
+
+<!--  <link rel="apple-touch-icon" href="icon.png">-->
+
+<!--  <link rel="apple-touch-icon" href="icon.png">-->
+
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css" id="theme-style">
+  <link rel="stylesheet" href="css/lightmode.css" id="theme-style-light" disabled>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<!-- Add your site or application content here -->
+
+<header><h1>Chat Server <h5><a href="about.html">About</a></h5></h1></header>
+
+<div class="sidebar" id="sidebar">
+  <nav>
+    <ul>
+
+
+      <h3><button class="button" id="button" onclick="newRoom()">Create And Join New Room</button></h3>
+      <h3><button class = "button" id="refresh" onclick="refresh()">Refresh</button></h3>
+      <button class= "button" id="mode-toggle">Toggle Light Mode</button>
+      <h2>List Of Chat Rooms</h2>
+
+
+    </ul>
+  </nav>
+</div>
+<section>
+  <div  class="section-inner">
+    <div id = "section-inner">
+
+    </div>
+    <textarea title="Chat Log" id="log" readonly
+              style="display: block; width: 80%; height: 600px; resize: none; margin: 0; padding: 0; border: 0;"></textarea>
+
+    <div id="chat-container"></div>
+    <form id="chat-form">
+      <input title="Chat Input" type="text"  id="chat-input" placeholder="Type your message...">
+
+      <button class="button" type="button" onclick="sendJSON()">Send</button>
+    </form>
+  </div>
+</section>
+
+
+<!--  </div>-->
+
+
+
+<!--<script src="js/vendor/modernizr-3.11.2.min.js"></script>-->
+<!--<script src="js/plugins.js"></script>-->
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<!--<script>-->
+<!--  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;-->
+<!--  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')-->
+<!--</script>-->
+<!--<script src="https://www.google-analytics.com/analytics.js" async></script>-->
+</body>
+
+</html>
